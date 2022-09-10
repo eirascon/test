@@ -1,12 +1,13 @@
 name: Run commands on different operating systems
 on:
-  push:
-    #branches: [ main ]
-  pull_request:
-    #branches: [ main ]
-  repository_dispatch:
-    types: [main]
   workflow_dispatch:
+  push:
+    branches: [ main ]
+  #pull_request:
+    #branches: [ main ]
+  #repository_dispatch:
+    #types: [main]
+  
 
 jobs:
   Run-npm-on-Ubuntu:
