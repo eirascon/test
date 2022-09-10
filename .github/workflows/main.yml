@@ -6,6 +6,7 @@ on:
     #branches: [ main ]
   repository_dispatch:
     types: [main]
+  workflow_dispatch:
 
 jobs:
   Run-npm-on-Ubuntu:
